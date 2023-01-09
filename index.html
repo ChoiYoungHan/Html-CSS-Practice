@@ -12,23 +12,29 @@
         -->    
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>p, br 태그</title>
+        <title>a 태그(링크)</title>
     </head>
     <!--<body>태그는 웹 브라우저에 표시되는 영역-->
     <body>
         <!--
-            <p> 태그
-            1. paragraph 단락을 의미한다.
-            2. <p> 태그는 단락과 단락 사이에 공간을 주는 태그이다.
-            3. <p> 태그는 웹 브라우저의 가로 한 줄을 사용하는 태그이다.
-                즉, 가로 한 줄에 다 표현되지 못하면 자동으로 줄바꿈되어 출력이 된다.(유동성)
-            4. 공백은 웹 브라우저에서는 최대 한 칸의 간격으로만 인식한다.
-                인위적으로 간격을 벌리고 싶을 때는 &nbsp;(스페이스바 한 번을 의미) 를 여러번 사용한다.
-        
-            <br> 태그
-            1. 줄바꿈을 해줄 때 사용
-            2. <br> 태그를 사용하면 사용한 위치에서 줄바꿈한다.         
+            <a> 태그
+            1. anchor 링크를 의미한다.
+            2. 웹 페이지에서 링크를 연결할 때 사용하는 태그이다.
+            3. a 태그는 내부 링크 방법과 외부 링크 방법이 있다.
+
+            내부링크 연결법
+            - href라는 속성을 이용하여 클릭했을 때 이동시키고 싶은 요소에
+                id 속성의 값을 #키와 함께 적어준다.
+            - 내부링크는 보통 목차에 많이 사용한다.
+
         -->
-        <p>p태그와 br태그에 대해 <br> 공부하고 있습니다.</p>
+        <a href="#one">one로 이동</a>
+        <a href="#two">two로 이동</a>
+        <a href="#three">three로 이동</a>
+
+        <p id="one" style="margin-top: 1500px;">one</p>
+        <p id="two" style="margin-top: 1500px;">two</p>
+        <p id="three" style="margin-top: 1500px;">three</p>
+        <p style="margin-top: 1500px;"></p>
     </body>
 </html>
