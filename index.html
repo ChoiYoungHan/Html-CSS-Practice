@@ -12,7 +12,7 @@
         -->    
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>rem</title>
+        <title>em</title>
         <!--
             font-size
             1. 웹 페이지에 표시되는 텍스트의 크기를 변경하려면 CSS에서 제공하는 속성 중 하나인
@@ -21,16 +21,20 @@
             rem
             1. rem 단위는 html 태그의 폰트 크기를 기준으로 배수에 해당하는 크기를 가지게 하기 위해서 사용하는 단위이다.
             2. html의 기본 폰트 크기는 16px이며 크기를 재정의하여 사용할 수도 있다.
+       
+            em
+            1. em 단위는 부모 태그의 폰트 크기의 배수를 의미한다.
         -->
         <style>
-            html{font-size: 20px;}
-            h1{font-size: 2rem;}
-            p{font-size: 2rem;}
+            p{font-size: 2em;}
+            span{font-size: 2em;}
         </style>
     </head>
     <!--<body>태그는 웹 브라우저에 표시되는 영역-->
     <body>
-       <h1>rem</h1>
-       <p>rem 단위는 html 태그의 폰트 크기를 기준으로 배수에 해당하는 크기를 가지게 하기 위해서 사용하는 단위이다..</p>
+       <p>
+        em 태그의 텍스트 <br>
+        <span>span 태그의 텍스트</span>
+       </p>
     </body>
 </html>
