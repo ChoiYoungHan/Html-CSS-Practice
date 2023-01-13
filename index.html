@@ -12,7 +12,7 @@
         -->    
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>font-family</title>
+        <title>font-weight</title>
         <!--
             텍스트를 제어할 수 있는 CSS 속성
 
@@ -28,14 +28,17 @@
             - font-family는 항상 값의 마지막에 generic-family 중 한 개를 사용해주어야 올바르게 사용했다고 볼 수 있다.
             - 앞에 나열되는 [글꼴]은 우선순위대로 작성해주어야 한다. ( 사용자의 컴퓨터 환경에서 글꼴을 불러오지 못할 경우를 대비 )
 
+            font-weight
+            - 굵기 단위
+            - 100~900 사이의 숫자값, normal, bold, bolder, lighter와 같은 키워드를 사용할 수 있다.
         -->
         <style>
-            h1{font-family: 'Times New Roman', Times, serif;}
+            h1{font-weight: bold;} /* 700 */
         </style>
     </head>
     <!--<body>태그는 웹 브라우저에 표시되는 영역-->
     <body>
-       <h1>font-family</h1>
-       <p>텍스트 글꼴을 변경하기 위해서 사용하는 CSS 속성입니다.</p>
+       <h1>font-weight</h1>
+       <p>텍스트 두께를 변경하기 위해서 사용하는 CSS 속성입니다.</p>
     </body>
 </html>
