@@ -12,35 +12,30 @@
         -->    
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>vw</title>
+        <title>font-family</title>
         <!--
+            텍스트를 제어할 수 있는 CSS 속성
+
             font-size
-            1. 웹 페이지에 표시되는 텍스트의 크기를 변경하려면 CSS에서 제공하는 속성 중 하나인
-                font-size 속성을 사용한다.
+            - 크기 단위 값
 
-            rem
-            1. rem 단위는 html 태그의 폰트 크기를 기준으로 배수에 해당하는 크기를 가지게 하기 위해서 사용하는 단위이다.
-            2. html의 기본 폰트 크기는 16px이며 크기를 재정의하여 사용할 수도 있다.
-       
-            em
-            1. em 단위는 부모 태그의 폰트 크기의 배수를 의미한다.
+            color
+            - 색상 표현 값
 
-            vw
-            1. viewport width, 화면의 가로 크기와 관련이 있는 단위이다.
-            2. 1vw는 화면 가로 크기의 1/100이다.
+            font-family
+            - [글꼴],[글꼴유형]
+            - [글꼴유형]은 generic-family라고도 부르며, serif, sans-serif, cursive, fantasy, monospace로 이루어져 있다.
+            - font-family는 항상 값의 마지막에 generic-family 중 한 개를 사용해주어야 올바르게 사용했다고 볼 수 있다.
+            - 앞에 나열되는 [글꼴]은 우선순위대로 작성해주어야 한다. ( 사용자의 컴퓨터 환경에서 글꼴을 불러오지 못할 경우를 대비 )
 
-            vh
-            1. viewport height, 화면의 세로 크기와 관련이 있는 단위이다.
-            2. 1vh는 화면 세로 크기의 1/100이다.
         -->
         <style>
-            h1{font-size: 10vw;}
-            p{font-size: 5vw;}
+            h1{font-family: 'Times New Roman', Times, serif;}
         </style>
     </head>
     <!--<body>태그는 웹 브라우저에 표시되는 영역-->
     <body>
-       <h1>vw</h1>
-       <p>vw(viewport width)는 화면의 가로 크기와 관련 있는 단위이다. 1vw는 화면 가로 크기의 1/100이다.</p>
+       <h1>font-family</h1>
+       <p>텍스트 글꼴을 변경하기 위해서 사용하는 CSS 속성입니다.</p>
     </body>
 </html>
